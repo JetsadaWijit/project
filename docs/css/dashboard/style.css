@@ -1,0 +1,37 @@
+.header {
+    padding: 2px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left, .right {
+    text-align: center;
+    width: 50%;
+}
+
+.left {
+    background-color: lightblue;
+    padding: 20px;
+}
+
+.right {
+    background-color: lightgreen;
+    padding: 20px;
+}
+
+.img-logo {
+    padding: 5px;
+    height: 100px;
+    width: 100px;
+    border-radius: 80px;
+}
+
+.img-logo-header {
+    height: 100px;
+    width: 100px;
+    border-radius: 80px;
+}
