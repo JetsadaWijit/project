@@ -7,10 +7,8 @@ var elementData = [
     }
 ];
 
-// New structure for elementDataSub
 var elementDataSub = {
-    // MCEngine
-    mcengine: [    
+    mcengine: [
         {
             name: 'heaven',
             platform: 'GitLab',
@@ -55,12 +53,16 @@ for (var i = 0; i < elementData.length; i++) {
     var gitlab = document.createElement('div');
     gitlab.className = 'right';
 
-    if (elementData[i].header === 'MCEngine' && elementDataSub.mcengine) {
-        for (var j = 0; j < elementDataSub.mcengine.length; j++) {
-            var dataContainer = createPlatformDiv(elementData[i].header, elementDataSub.mcengine[j].platform, elementDataSub.mcengine[j].name, elementDataSub.mcengine[j].img_id);
-            if (elementDataSub.mcengine[j].platform === 'GitHub') {
+    // Dynamic approach to handle any header
+    var currentHeader = elementData[i].header.toLowerCase(); // Assuming headers are case-insensitive
+    if (elementDataSub[currentHeader]) {
+        for (var j = 0; j < elementDataSub[currentHeader].length; j++) {
+            var project = elementDataSub[currentHeader][j];
+            var dataContainer = createPlatformDiv(elementData[i].header, project.platform, project.name, project.img_id);
+            
+            if (project.platform === 'GitHub') {
                 github.appendChild(dataContainer);
-            } else if (elementDataSub.mcengine[j].platform === 'GitLab') {
+            } else if (project.platform === 'GitLab') {
                 gitlab.appendChild(dataContainer);
             }
         }
