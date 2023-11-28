@@ -36,7 +36,7 @@ var elementDataSub = {
     ],
     artrost: [
         {
-            name: 'ArTrost.github.io',
+            name: 'server',
             platform: 'GitHub',
             img_id: 'DFOWHbQ'
         }
