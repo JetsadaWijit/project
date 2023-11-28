@@ -2,6 +2,10 @@ var img_host_link = 'https://i.imgur.com';
 
 var elementData = [
     {
+        header: 'ArTrost',
+        img_id: 'DFOWHbQ'
+    },
+    {
         header: 'MCEngine',
         img_id: '9O7Dfn9'
     }
@@ -28,6 +32,13 @@ var elementDataSub = {
             name: 'shadow',
             platform: 'GitLab',
             img_id: '9O7Dfn9'
+        }
+    ],
+    artrost: [
+        {
+            name: 'ArTrost.github.io',
+            platform: 'GitHub',
+            img_id: 'DFOWHbQ'
         }
     ]
 };
