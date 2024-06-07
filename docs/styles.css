@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project {
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project h2 {
+    margin: 0 0 10px 0;
+}
+
+.project p {
+    margin: 5px 0;
+}
