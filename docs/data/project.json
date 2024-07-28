@@ -1,8 +1,8 @@
 [
     {
+        "host": "GitHub",
         "owner": "JetsadaWijit",
         "repository": "project-express-reg-lg",
-        "host": "GitHub",
         "title": "Express register&login system"
     }
 ]
