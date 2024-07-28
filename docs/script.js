@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <h2>${project.title}</h2>
                     <p><strong>Host:</strong> ${project.host}</p>
                     <p><strong>Owner:</strong> ${project.owner}</p>
-                    <p><strong>Repository:</strong> <a href="${baseUrl}/${project.owner}/${project.repository}" target="_blank">${project.repository}</a></p>
+                    <p><strong>Repository:</strong> <a href="${baseUrl}/${project.username}/${project.repository}" target="_blank">${project.repository}</a></p>
                 `;
                 projectsContainer.appendChild(projectElement);
             });
