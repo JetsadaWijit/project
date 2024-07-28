@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(data => {
             const projectsContainer = document.getElementById('projects-container');
             data.forEach(project => {
-                if (project.host === 'github') baseUrl = githubUrl;
+                if (project.host === 'GitHub') baseUrl = githubUrl;
                 const projectElement = document.createElement('div');
                 projectElement.classList.add('project');
                 projectElement.innerHTML = `
